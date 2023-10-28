@@ -21,6 +21,7 @@ public class RocniObdobiController {
 
  @PostMapping("")
  public String post(@ModelAttribute("form") RocniObdobiForm form) {
-  return "rocni-obdobi";
+  return "rocni-obdobi";  // ModelAttribute podobne jako model and vie to model attribute ozanci ze se
+  // to ma vlozit do te sablony pod tim klicem a nemusi se delat .add
  }
 }

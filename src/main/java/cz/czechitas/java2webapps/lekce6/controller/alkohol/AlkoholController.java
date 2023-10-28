@@ -25,8 +25,10 @@ public class AlkoholController {
     return modelAndView;
   }
 
-  @PostMapping("")
+  @PostMapping("") // @valid abzsme rekli springu, ze to ma validovat
   public Object form(@Valid @ModelAttribute("form") AlkoholForm form, BindingResult bindingResult) {
+    // binding results do toho nam spring doplni jak to dopadlo s tou validaci
+
 /*
     if (form.getVek() < 18) {
       return "/alkohol/nizky-vek";
